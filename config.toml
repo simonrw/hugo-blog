@@ -1,7 +1,7 @@
 baseURL = "https://mindriot101.github.io"
 languageCode = "en-us"
 title = "Circularspace"
-theme = "ananke"
+theme = "anubis"
 
 [markup]
 defaultMarkdownHandler = "goldmark"
