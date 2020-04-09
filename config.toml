@@ -8,3 +8,13 @@ defaultMarkdownHandler = "goldmark"
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[menu]
+
+  [[menu.main]]
+  identifier = "archive"
+  name = "Archive"
+  title = "Archive"
+  url = "/posts/"
+  weight = 0.0
+
