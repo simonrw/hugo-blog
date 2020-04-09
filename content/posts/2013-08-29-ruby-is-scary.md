@@ -8,7 +8,7 @@ Tags:
 Category: tech
 ---
 
-Ok so after my [previous post]({{< ref "posts/2013-08-26-ruby-first-impressions.markdown" >}}), I was feeling pretty excited about Ruby. I talked about its power and flexibility and the exciting things that could come from it.
+Ok so after my [previous post]({{< ref "posts/2013-08-26-ruby-first-impressions.md" >}}), I was feeling pretty excited about Ruby. I talked about its power and flexibility and the exciting things that could come from it.
 
 I also talked of Ruby's scariness, it's ability to terrify new programmers and potential for difficulties.
 
