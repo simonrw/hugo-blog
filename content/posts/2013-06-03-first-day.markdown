@@ -1,0 +1,38 @@
+---
+layout: post
+title: First day
+date: 2013-06-03 23:37:00
+comments: true
+Category: science
+tags:
+- astronomy
+- travel
+---
+
+So the first day has just finished. We had some interesting talks (and some not
+so interesting, but that's to be expected).
+
+The first session - before lunch - was dedicated to direct imaging, which is
+really taking off as a field, with advancements in technology and analysis tools
+since I last updated myself on the field. Being able to directly see
+protoplanetary disks is a new idea for me. 
+
+The idea I liked the most was a clever way to detect a secondary body around the
+star. The complex optics and stellar flux removal techniques leave a noise
+characteristic pattern around where the star once was. This changes from frame
+to frame but fundamentally does not really change shape. A moving planet however
+does change position. The "speckle" pattern does not care about the orientation
+of the ccd so the field of view rotating will appear the same. By observing
+whilst the field rotates and then stacking the frames aligning them by the
+orientation of the frames provides a clear target which stands out from the
+background.
+
+After lunch was a session on disks, with lots of hydrodynamical simulations and
+the like. All quite complex, but some ground-breaking results. An observation of
+an almost completely asymmetrical disk with a proposed explanation. This doesn't
+sound particularly exciting when I write this but it was quite cool. IF my
+memory was better I'd write it up a little better.
+
+Anyway about to go to sleep now, another busy day tomorrow with a public talk
+given by Debra Fischer, most likely announcing new results from Kepler which
+could be interesting given its current state.

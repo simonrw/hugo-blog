@@ -1,0 +1,26 @@
+---
+title: Discs, discs and more discs
+date: 2013-06-04 22:11:00
+comments: true
+Category: science
+keywords:
+- astronomy
+- travel
+---
+
+So today we learnt about discs, as the title of this post may suggest. We had
+protoplanetary discs (or proplyds which is a horrible portmanteau), thin discs,
+thick discs, transitional discs...
+
+This mostly involved theorists and simulations working their hardest, but we did
+get a few observational results thrown in for good measure. To be fair it's a
+simulation type topic, current methods are not powerful enough without some
+serious and therefore expensive time on the largest telescopes. Some nice
+analysis advances are being made but for once[^1] observationalists have to play
+catch up.
+
+We finished with a public talk from Debra Fischer and a slightly US-centred view
+on the history of exoplanet discovery. There was one nice picture of Mayor and
+Queloz by the telescope. A good day in all.
+
+[^1]: I am exaggerating here for effect.

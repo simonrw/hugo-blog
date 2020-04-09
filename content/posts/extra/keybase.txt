@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/srwalker101
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mindriot101.github.io
+  * I am srwalker101 (https://keybase.io/srwalker101) on keybase.
+  * I have a public key ASAS5wq9O2nHTLIFKrJiRhkOXxkMHjzj-Z8lU6k1OPBSZwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "012012e70abd3b69c74cb2052ab26246190e5f190c1e3ce3f99f2553a93538f052670a",
+            "host": "keybase.io",
+            "kid": "012012e70abd3b69c74cb2052ab26246190e5f190c1e3ce3f99f2553a93538f052670a",
+            "uid": "bdf5de84c46a335161b888f56f2bf519",
+            "username": "srwalker101"
+        },
+        "service": {
+            "hostname": "mindriot101.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.17"
+    },
+    "ctime": 1472634749,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1472634726,
+        "hash": "541dc1f9e13562ebde233db852957bf8a5b7f73aabfe8a96bb54e5f35e20dcd5b6ce5081b80811ea6097c04b87833bfa0354199ae0f879fee0ff77bd3838825e",
+        "seqno": 611424
+    },
+    "prev": "42b89e233b8ecf4ccc85c5153db1c09105a23c857b97e65d91ffafd4db5a3744",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgEucKvTtpx0yyBSqyYkYZDl8ZDB484/mfJVOpNTjwUmcKp3BheWxvYWTFAwB7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMTJlNzBhYmQzYjY5Yzc0Y2IyMDUyYWIyNjI0NjE5MGU1ZjE5MGMxZTNjZTNmOTlmMjU1M2E5MzUzOGYwNTI2NzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMTJlNzBhYmQzYjY5Yzc0Y2IyMDUyYWIyNjI0NjE5MGU1ZjE5MGMxZTNjZTNmOTlmMjU1M2E5MzUzOGYwNTI2NzBhIiwidWlkIjoiYmRmNWRlODRjNDZhMzM1MTYxYjg4OGY1NmYyYmY1MTkiLCJ1c2VybmFtZSI6InNyd2Fsa2VyMTAxIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJtaW5kcmlvdDEwMS5naXRodWIuaW8iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xNyJ9LCJjdGltZSI6MTQ3MjYzNDc0OSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDcyNjM0NzI2LCJoYXNoIjoiNTQxZGMxZjllMTM1NjJlYmRlMjMzZGI4NTI5NTdiZjhhNWI3ZjczYWFiZmU4YTk2YmI1NGU1ZjM1ZTIwZGNkNWI2Y2U1MDgxYjgwODExZWE2MDk3YzA0Yjg3ODMzYmZhMDM1NDE5OWFlMGY4NzlmZWUwZmY3N2JkMzgzODgyNWUiLCJzZXFubyI6NjExNDI0fSwicHJldiI6IjQyYjg5ZTIzM2I4ZWNmNGNjYzg1YzUxNTNkYjFjMDkxMDVhMjNjODU3Yjk3ZTY1ZDkxZmZhZmQ0ZGI1YTM3NDQiLCJzZXFubyI6OSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEAh8OMd80FYzHpQKoPuZncnC4IPP9t9Jlxv6QDyOyZIrZWHZdsmx0bTNix7BMq27Kf0u9rKgLTJ0iSF+TNXigkAqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgnL9zOOkUu5g3Vu8tXKDH/pfYSOgRqHEtvWKbXXshBdejdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/srwalker101
+
+==================================================================

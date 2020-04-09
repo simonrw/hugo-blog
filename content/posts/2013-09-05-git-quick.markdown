@@ -1,0 +1,38 @@
+---
+layout: post
+title: git quick
+date: 2013-09-05 23:04:00
+comments: true
+Tags:
+- git
+Category: tech
+---
+
+Git quick is a simple shell command I've written for quicker one line messages. It allows committing like
+
+``` bash
+g q A simple commit message
+```
+
+Note the lack of quotes.  Some things I've used to make it quicker:
+
+* alias git to g in my zshrc
+* alias q to quick in my gitconfig file
+* put the `git-quick` script into my path somewhere
+
+### The script
+
+The script really can't be much simpler:
+
+{{< gist mindriot101 6456980 >}}
+
+(gisted for quick cloning)
+
+I only learnt about git cleverly loading any executable `git-*` script, and it simply expands any arguments into the commit message.
+
+Note: this can be even quicker if you alias git quick to a single letter in your zshrc e.g. `alias gq='git quick'` or `alias q='git quick'` but this seems a bit silly to me. 
+
+
+
+
+*WARNING: this increases the likelihood of commit messages like "stuff" or "commit" as it makes it really easy to write short informative messages, so I implore you to use this newly gained power wisely.*
