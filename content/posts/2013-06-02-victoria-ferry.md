@@ -3,7 +3,7 @@ title: Victoria ferry
 date: 2013-06-02 12:43:00
 comments: true
 Category: science
-keywords:
+tags:
 - astronomy
 - travel
 ---

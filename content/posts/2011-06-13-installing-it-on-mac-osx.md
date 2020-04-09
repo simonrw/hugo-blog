@@ -1,10 +1,9 @@
 ---
 date: 2011-06-13 14:42:00
 title: Installing IT++ on Mac OSX
-keywords:
+tags:
 - OSX
 - itpp
-category: tech
 layout: post
 comments: true
 ---

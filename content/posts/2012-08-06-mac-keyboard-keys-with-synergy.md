@@ -2,7 +2,7 @@
 date: 2012-08-06 17:21:28
 title: Mac keyboard keys with Synergy
 Category: tech
-keywords:
+tags:
 - OSX
 - linux
 layout: post

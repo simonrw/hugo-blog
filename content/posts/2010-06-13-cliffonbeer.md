@@ -1,7 +1,8 @@
 ---
 Title: Cliff on beer
 date: 2010-06-13 17:48:00
-keywords: life
+tags:
+- life
 ---
 
 

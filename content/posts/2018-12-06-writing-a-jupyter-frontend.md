@@ -2,7 +2,6 @@
 title: Jupyter client library
 Authors: Simon Walker
 date: 2018-12-06 19:00:20
-category: tech
 tags:
 - rust
 ---

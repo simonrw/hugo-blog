@@ -2,7 +2,7 @@
 date: 2013-02-05 11:38:00
 title: Embedding Python in LaTeX
 Category: tech
-keywords:
+tags:
 - python
 - LaTeX
 layout: post

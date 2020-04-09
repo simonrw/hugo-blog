@@ -1,8 +1,7 @@
 ---
 title: Hostel ahoy
 date: 2013-06-01 17:49:00
-category: science
-keywords:
+tags:
 - astronomy
 - travel
 ---

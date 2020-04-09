@@ -1,7 +1,6 @@
 ---
 title: Fighting the compiler
 date: 2016-06-01 08:40:18
-category: tech
 tags:
 - rust
 ---

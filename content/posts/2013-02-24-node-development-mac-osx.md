@@ -2,7 +2,7 @@
 Title: (node) development on OSX
 Date: 2013-02-24
 Category: tech
-keywords:
+tags:
 - node
 - OSX
 - productivity

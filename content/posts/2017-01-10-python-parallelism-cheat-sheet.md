@@ -2,7 +2,6 @@
 title: Python parallelism cheat sheet
 Authors: Simon Walker
 date: 2017-01-10 22:53:24
-category: tech
 tags:
 - python
 ---

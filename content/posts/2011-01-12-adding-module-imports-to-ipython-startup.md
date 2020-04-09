@@ -1,8 +1,7 @@
 ---
 Title: Adding module imports to iPython startup
 Date: 2011-01-12 10:19:00
-category: tech
-keywords:
+tags:
 - python
 - ipython
 ---

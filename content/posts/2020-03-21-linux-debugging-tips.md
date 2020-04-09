@@ -2,7 +2,6 @@
 title: Linux debugging tips
 Authors: Simon Walker
 date: 2020-03-21 19:04:41
-category: tech
 tags:
 - linux
 summary: 📘  💻 ℹ️ Tips designed to help new Linux users work out what is going on

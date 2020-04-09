@@ -2,7 +2,7 @@
 Title: "The :Explore command in vim"
 Date: 2013-05-20
 Category: tech
-keywords:
+tags:
 - vim
 layout: post
 comments: true

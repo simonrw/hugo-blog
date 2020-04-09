@@ -1,8 +1,7 @@
 ---
 Title: Linking on linux
 Date: 2010-07-08 15:24:00
-category: tech
-keywords:
+tags:
 - linux
 - c
 ---

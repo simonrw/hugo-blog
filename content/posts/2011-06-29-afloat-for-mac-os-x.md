@@ -1,9 +1,8 @@
 ---
 date: 2011-06-29 12:00:06
 title: Afloat for Mac OS X
-keywords:
+tags:
 - OSX
-category: tech
 layout: post
 comments: true
 ---

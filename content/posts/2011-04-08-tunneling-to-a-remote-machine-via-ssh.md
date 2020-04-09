@@ -1,8 +1,7 @@
 ---
 date: 2011-04-08 13:57:00
 title: Tunneling to a remote machine via ssh
-category: tech
-keywords:
+tags:
 - ssh
 - linux
 ---

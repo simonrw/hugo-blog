@@ -1,7 +1,6 @@
 ---
 title: Python database transactions
 date: 2015-09-19 14:47:23
-category: tech
 tags:
 - python
 ---

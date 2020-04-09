@@ -2,7 +2,7 @@
 date: 2011-11-11 12:05:21
 title: "Cython: getting a vector from a numpy array"
 Category: tech
-keywords:
+tags:
 - python
 ---
 

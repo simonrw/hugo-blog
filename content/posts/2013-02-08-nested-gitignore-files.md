@@ -2,7 +2,7 @@
 date: 2013-02-08 11:39:10
 title: Nested gitignore files
 Category: tech
-keywords:
+tags:
 - git
 ---
 

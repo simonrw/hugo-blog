@@ -2,7 +2,7 @@
 Title: Cross site REST development
 Date: 2013-03-10
 Category: tech
-keywords:
+tags:
 - python
 - webdev
 layout: post

@@ -2,7 +2,6 @@
 title: Emcee in Rust
 Authors: Simon Walker
 date: 2017-06-07 19:59:23
-category: tech
 tags:
 - rust
 ---

@@ -1,7 +1,6 @@
 ---
 title: Separate IPython profiles for interactive use
 date: Sun Jan 18 20:33:57 GMT 2015
-category: tech
 tags:
 - python
 - visualisation

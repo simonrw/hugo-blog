@@ -1,8 +1,8 @@
 ---
 date: 2011-03-19 12:00:08
 title: Graphics engines
-category: tech
-keywords: gamedev
+tags:
+- gamedev
 layout: post
 comments: true
 ---

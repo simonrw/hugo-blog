@@ -2,7 +2,6 @@
 title: Kafka findings
 Authors: Simon Walker
 date: 2020-04-09 09:28:12
-category: tech
 tags:
 - kafka
 summary: How does Kafka distribute its messages to consumers?

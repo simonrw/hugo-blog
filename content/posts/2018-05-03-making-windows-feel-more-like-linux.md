@@ -2,7 +2,6 @@
 title: Making windows feel more like Linux
 Authors: Simon Walker
 date: 2018-07-03 20:22:23
-category: tech
 tags:
 - windows
 - linux

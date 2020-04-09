@@ -2,7 +2,7 @@
 Title: Installing development version of nginx with Homebrew
 Date: 2013-02-25
 Category: tech
-keywords:
+tags:
 - homebrew
 - OSX
 - nginx

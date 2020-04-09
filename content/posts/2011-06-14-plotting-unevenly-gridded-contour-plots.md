@@ -1,8 +1,9 @@
 ---
 date: 2011-06-14 15:16:27
 title: Plotting unevenly gridded contour plots
-keywords: python, visualisation
-category: tech
+tags:
+- python
+- visualisation
 layout: post
 comments: true
 ---

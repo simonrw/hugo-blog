@@ -1,8 +1,8 @@
 ---
 Title: Restore Xcode startup panel
 Date: 2010-12-22 16:52:00
-category: tech
-keywords: OSX
+tags:
+- OSX
 ---
 
 

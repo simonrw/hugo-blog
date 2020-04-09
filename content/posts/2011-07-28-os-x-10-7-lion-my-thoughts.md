@@ -2,7 +2,7 @@
 date: 2011-07-28 11:57:00
 title: "OS X 10.7 Lion: my thoughts"
 Category: tech
-keywords:
+tags:
 - OSX
 ---
 

@@ -3,7 +3,6 @@ layout: post
 title: git submodules are not so bad
 date: 2014-12-28 23:25:51 +0000
 comments: true
-category: tech
 tags:
 - git
 ---

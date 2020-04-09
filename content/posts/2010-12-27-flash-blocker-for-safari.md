@@ -1,8 +1,8 @@
 ---
 Title: Flash blocker for safari
 Date: 2010-12-27 23:39:00
-category: tech
-keywords: OSX
+tags:
+- OSX
 layout: post
 comments: true
 ---

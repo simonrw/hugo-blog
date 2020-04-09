@@ -1,7 +1,6 @@
 ---
 Title: Allowing the use of clang in qmake
 Date: 2010-07-01 14:54:00
-category: tech
 ---
 
 

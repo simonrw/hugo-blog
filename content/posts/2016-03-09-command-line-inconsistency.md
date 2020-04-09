@@ -1,7 +1,6 @@
 ---
 title: Command line inconsistency
 date: 2016-03-09 15:20:14
-category: tech
 tags:
 - linux
 ---

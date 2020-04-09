@@ -1,7 +1,6 @@
 ---
 title: Installing rust on older linux systems
 date: 2016-06-15 10:52:51
-category: tech
 tags:
 - rust
 ---

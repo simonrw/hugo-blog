@@ -1,7 +1,6 @@
 ---
 title: Numpy functions may not do what you think
 date: 2016-05-06 09:42:56
-category: tech
 tags:
 - python
 - numpy

@@ -1,7 +1,6 @@
 ---
 Title: Pinky and the Brain, Tongue Twister
 Date: 2010-06-22 21:13:00
-category: life
 ---
 
 {{< youtube eIu4fP4fOHE >}}

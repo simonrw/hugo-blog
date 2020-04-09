@@ -1,7 +1,6 @@
 ---
 Title: Turn of middle click page loading in Firefox
 Date: 2010-06-23 13:09:00
-category: tech
 ---
 
 

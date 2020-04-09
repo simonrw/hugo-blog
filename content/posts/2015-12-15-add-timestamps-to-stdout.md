@@ -1,7 +1,6 @@
 ---
 title: Add timestamps to stdout
 date: 2015-12-15 13:41:39
-category: tech
 ---
 
 I spent some time trying to get timestamps added to C++ printing, e.g .through `cout`.

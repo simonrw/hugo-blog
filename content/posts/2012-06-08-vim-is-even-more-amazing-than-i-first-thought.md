@@ -2,7 +2,8 @@
 date: 2012-06-08 11:09:23
 title: Vim is even more amazing than I first thought!
 Category: tech
-keywords: vim
+tags:
+- vim
 layout: post
 comments: true
 ---

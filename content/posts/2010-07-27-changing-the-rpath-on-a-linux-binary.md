@@ -1,8 +1,9 @@
 ---
 Title: Changing the rpath on a linux binary
 Date: 2010-07-27 10:15:00
-category: tech
-keywords: linux, c
+tags:
+- linux
+- c
 layout: post
 comments: true
 ---
