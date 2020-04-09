@@ -4,7 +4,7 @@ https://keybase.io/srwalker101
 
 I hereby claim:
 
-  * I am an admin of https://mindriot101.github.io
+  * I am an admin of https://blog.simonrw.com
   * I am srwalker101 (https://keybase.io/srwalker101) on keybase.
   * I have a public key ASAS5wq9O2nHTLIFKrJiRhkOXxkMHjzj-Z8lU6k1OPBSZwo
 
@@ -20,7 +20,7 @@ To do so, I am signing this object:
             "username": "srwalker101"
         },
         "service": {
-            "hostname": "mindriot101.github.io",
+            "hostname": "blog.simonrw.com",
             "protocol": "https:"
         },
         "type": "web_service_binding",
