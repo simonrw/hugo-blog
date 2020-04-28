@@ -1,7 +1,6 @@
 ---
 title: "Updating Shift Touchtyping"
 date: 2020-04-27T22:58:51+01:00
-draft: true
 ---
 
 I was pointed to Steve Losh's [blog post](https://stevelosh.com/blog/2012/10/a-modern-space-cadet/#s15-better-shifting) about helping improve touch typing by the very helpful and friendly Chris Toomey. Steve used Karabiner Elements (then KeyRemap4MacBook) to disable the "incorrect" shift key combinations (i.e. for capital "P" the left shift _must_ be used).
