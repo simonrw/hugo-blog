@@ -165,3 +165,9 @@ or talking to the file system, or stuck in a wait loop.
 
 For more information, check out [Julia Evans' blog
 posts](https://jvns.ca/categories/strace/) on `strace` and its power.
+
+## Additional links
+
+I will keep this list up to date with new links when I find them.
+
+* [Linux Performance Analysis in 60,000 Milliseconds](https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55) - really useful list of performance debugging techniques that can be deployed when performance is bad.
