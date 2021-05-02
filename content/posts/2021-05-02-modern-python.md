@@ -4,6 +4,7 @@ date: 2021-05-02T12:00:00+01:00
 tags:
 - python
 summary: How I set up Python projects
+draft: true
 ---
 
 Python dependency management is difficult.
