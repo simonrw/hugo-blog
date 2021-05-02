@@ -72,6 +72,8 @@ which configure a python interpreter to look in a specific location for
 packages. This means that a virtual environment for project A can
 include different packages than the virtual environment for project B.
 
+### Global isolation
+
 This isolation is where my first suggestion in this section comes in:
 [`pipx`][pipx].
 
@@ -83,9 +85,78 @@ break your packages at unpredictable times.
 
 This isolation is **especially** true for Python dependency managers.
 They should be installed in a unique environment so that they don't pick
-up packages from outside.
+up packages from outside by accident.
+
+### Project isolation
+
+Project dependencies should be considered in a separate way. The same
+requirement for isolation is shared with the global environment.
+
+Project dependency management introduces an additional layer of
+complexity: version locking. For application-type projects (CLIs, web
+applications, anything that is not going to be imported as a package by
+others), package versions should be locked to ensure reproducible
+behaviour. Library type projects, which are designed to be imported by
+others - for example `requests` - should *not* lock their package
+versions. The dependency specification of library type projects should
+be as loose as possible, to reduce complications for projects that
+import the library.
+
+Two major project dependency managers exist for Python:
+[`poetry`][poetry] and [`pipenv`][pipenv].
+
+The behaviour of these two project dependency managers is approximately
+the same.  They introduce a loose specification for project depdencies,
+which is then locked into a separate file, with exact version
+constraints.  Projects can be set up to install dependencies from this
+lockfile only to ensure the same versions are installed.
+
+Both projects include creating a virtual environment behind the scenes,
+that is effectively invisible to the user. In order to run commands from
+within that environment, the command must be prefixed by `<pipenv or
+poetry> run <cmd>`. Both commands include a way to configure the current
+shell to include those packages by default, for convenience: `<pipenv or
+poetry> shell`.
+
+The reasons to prefer [`poetry`][poetry] over [`pipenv`][pipenv] may
+include an element of subjectivity, but here I will remain objective.
+
+The first advantage of [`poetry`][poetry] is that the manifest format
+used to define packages - a `pyproject.toml` file - [is set to replace
+the familiar `setup.py` file for
+projects](lkjnasglkjnasdgljnasdlgjnaslgknasg). This converts an
+imperative script that must be executed in order to determine a
+projects' dependencies, to a static manifest that can be cached, or
+parsed without installing the package itself. This manifest file is
+[already supported by pip > xxx](ljnasg) so legacy projects can still
+use a dependency that has converted to `pyproject.toml`.  **This is not
+the case for [`pipenv`][pipenv]. Its package format is custom and
+exclusive to [`pipenv`][pipenv].**
+
+[`poetry`][poetry] includes a custom dependency resolver, which is
+faster than [`pipenv`][pipenv]'s. This makes a difference when getting
+up and running with a new project, but also when adding new packages.
+
+When working on a project, typically you want the local package to be
+installed in "editable" mode - i.e. a symlink, so that package changes
+are picked up when running tests. An alternative is to use [`tox`][tox],
+however this is often slower than running tests against the local
+package installed in editable mode, as a source packge must be generated
+and installed on each test run.
+
+[`poetry`][poetry] does this by default. You do not need to specify the
+local package in the manifest file, and [`poetry`][poetry] knows what to
+do. TODO
+
+* Publishing
 
 ## Best practices
+
+* **Never** install packages using `pip` into the global environment of
+  a Python installation. [`pipx][pipx] enforces the use of virtual
+  environments for CLIs, and [`poetry`][poetry] enforces the use of
+  virtual environments for projects. 
+
 
 My workflow when setting up a new laptop is as follows:
 
@@ -100,14 +171,21 @@ My workflow when setting up a new laptop is as follows:
 
 1. `brew install pipx`
 2. Set up pipx to use a fixed version of Python: set the environment
-   variable `PIPX_DEFAULT_PYTHON=$(asdf which python3.9)`
+   variable e.g. `PIPX_DEFAULT_PYTHON=$(asdf which python3.9)`
 
-### Use `asdf` to install `poetry`
+### Use `pipx` to install `poetry`
 
-1. `pipx 
+1. `pipx install poetry`
+
+### Set up a Python project
+
+1. `poetry init`
+2. Add dependencies: `poetry add ...`
 
 [asdf]: https://github.com/asdf-vm/asdf
 [pyenv]: https://github.com/pyenv/pyenv
 [poetry]: https://python-poetry.org/
 [pipx]: https://github.com/pipxproject/pipx
 [homebrew]: https://brew.sh
+[pipenv]: https://pipenv.pypa.io/en/latest/
+[tox]: https://tox.readthedocs.io/en/latest/
