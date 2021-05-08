@@ -34,7 +34,7 @@ depends on Python 3.6 and another depends on Python 3.8, the two can be
 designated per project.
 
 [`asdf`][asdf] can be thought of as `pyenv` but for many languages, and
-so is interchangable.
+so is interchangeable.
 
 The main reason I suggest using one of these two package managers is
 then your install isn't tied to the system Python.
@@ -64,7 +64,7 @@ This all therefore means that we must:
 
 * isolate projects from each other, so that invalid versions of packages
   from one project are not installed into others; and
-* package depdencies must be strictly resolved, so that projects can
+* package dependencies must be strictly resolved, so that projects can
   include the correct versions.
 
 Historically this has been implemented through "virtual environments",
@@ -106,10 +106,10 @@ Two major project dependency managers exist for Python:
 [`poetry`][poetry] and [`pipenv`][pipenv].
 
 The behaviour of these two project dependency managers is approximately
-the same.  They introduce a loose specification for project depdencies,
-which is then locked into a separate file, with exact version
-constraints.  Projects can be set up to install dependencies from this
-lockfile only to ensure the same versions are installed.
+the same.  They introduce a loose specification for project
+dependencies, which is then locked into a separate file, with exact
+version constraints.  Projects can be set up to install dependencies
+from this lockfile only to ensure the same versions are installed.
 
 Both projects include creating a virtual environment behind the scenes,
 that is effectively invisible to the user. In order to run commands from
@@ -122,15 +122,14 @@ The reasons to prefer [`poetry`][poetry] over [`pipenv`][pipenv] may
 include an element of subjectivity, but here I will remain objective.
 
 The first advantage of [`poetry`][poetry] is that the manifest format
-used to define packages - a `pyproject.toml` file - [is set to replace
-the familiar `setup.py` file for
-projects](lkjnasglkjnasdgljnasdlgjnaslgknasg). This converts an
+used to define packages - a `pyproject.toml` file. This converts an
 imperative script that must be executed in order to determine a
 projects' dependencies, to a static manifest that can be cached, or
 parsed without installing the package itself. This manifest file is
-[already supported by pip > xxx](ljnasg) so legacy projects can still
-use a dependency that has converted to `pyproject.toml`.  **This is not
-the case for [`pipenv`][pipenv]. Its package format is custom and
+[already supported by pip > 19.0, from
+2019](https://pip.pypa.io/en/stable/news/#v19-0) so legacy projects can
+still use a dependency that has converted to `pyproject.toml`.  **This
+is not the case for [`pipenv`][pipenv]. Its package format is custom and
 exclusive to [`pipenv`][pipenv].**
 
 [`poetry`][poetry] includes a custom dependency resolver, which is
@@ -141,19 +140,24 @@ When working on a project, typically you want the local package to be
 installed in "editable" mode - i.e. a symlink, so that package changes
 are picked up when running tests. An alternative is to use [`tox`][tox],
 however this is often slower than running tests against the local
-package installed in editable mode, as a source packge must be generated
+package installed in editable mode, as a source package must be generated
 and installed on each test run.
 
 [`poetry`][poetry] does this by default. You do not need to specify the
 local package in the manifest file, and [`poetry`][poetry] knows what to
-do. TODO
+do.
 
-* Publishing
+[`pipenv`][pipenv] does not have any support for publishing packages.
+This means that if you use [`pipenv`][pipenv] to manage a library
+project, you *must* use `setup.py` to define your library dependencies,
+rather than `pyproject.toml`. [`poetry`][poetry] [supports building and
+publishing packages as part of it's default feature
+set](https://python-poetry.org/docs/libraries/)
 
 ## Best practices
 
 * **Never** install packages using `pip` into the global environment of
-  a Python installation. [`pipx][pipx] enforces the use of virtual
+  a Python installation. [`pipx`][pipx] enforces the use of virtual
   environments for CLIs, and [`poetry`][poetry] enforces the use of
   virtual environments for projects. 
 
