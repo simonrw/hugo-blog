@@ -25,6 +25,11 @@ I am here to hopefully simplify the process into the following steps:
 Throughout this post, I will explain my reasoning behind my suggestions,
 so that hopefully you will understand **why** I have made my choices.
 
+![The python ecosystem](/img/virtualenvs.png)
+
+*The Python ecosystem. Items in green represent suggested tools. Items
+in red represent parts of the system that should not be used.*
+
 ## Install Python
 
 **Suggestion**: Use [`pyenv`][pyenv] or [`asdf`][asdf]
@@ -182,6 +187,18 @@ set](https://python-poetry.org/docs/libraries/)
   a Python installation. [`pipx`][pipx] enforces the use of virtual
   environments for CLIs, and [`poetry`][poetry] enforces the use of
   virtual environments for projects.
+* **Never** use sudo to install packages with `pip`. This practice
+  usually indicates that you are doing something wrong.
+* If using [`pipenv`][pipenv], read the output of the command when it
+  runs, to make sure you are using an expected version of Python for the
+  virtual environment. See the [pipenv section](#using-pipenv) for more
+  details.
+* Do not install packages with your system package manager (e.g.
+  `apt-get`). These packages are usually installed only for the system
+  Python, and you should not use the system Python.
+* If you find yourself using `pip install --user` then something is
+  wrong. If you are installing a CLI, then use [`pipx`][pipx]. If you
+  are installing to a project, use the project's dependency manager.
 
 ## My workflow
 
@@ -216,14 +233,50 @@ My workflow when setting up a new laptop is as follows:
 If using [`pipenv`][pipenv], you must be careful when [`pipenv`][pipenv]
 sets up the virtual environment for you.  It is fairly greedy on which
 python it picks to use, so I usually create the virtual environment
-manually before running any other [`pipenv`][pipenv] commands. This is
+manually before running any other [`pipenv`][pipenv] commands. 
+
+In the example below, I set the local python version to 3.6.13 via
+[`asdf`][asdf]. I then create a [`pipenv`][pipenv] project, but it
+chooses to use python 3.9.5 to create the virtual environment rather
+than 3.6.13 as I specify.
+
+```
+$ asdf local python 3.6.13
+$ python --version
+Python 3.6.13
+
+$ which python
+/Users/<me>/.asdf/shims/python
+
+$ asdf which python
+/Users/<me>/.asdf/installs/python/3.6.13/bin/python
+
+# This step uses python 3.9 to create the virtual environment
+$ pipenv install
+Creating a virtualenv for this project...                  HERE
+Pipfile: /private/tmp/pipenvtesting/Pipfile                ▼▼▼▼▼
+Using /Users/<me>/.asdf/installs/python/3.9.5/bin/python3 (3.9.5) to create virtualenv...
+⠼ Creating virtual environment...created virtual environment CPython3.9.5.final.0-64 in 245ms
+  creator CPython3Posix(dest=/Users/<me>/.local/share/virtualenvs/pipenvtesting-TqUem2-j, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/Users/<me>/Library/Application Support/virtualenv)
+    added seed packages: pip==21.0.1, setuptools==56.0.0, wheel==0.36.2
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+✔ Successfully created virtual environment!
+Virtualenv location: /Users/<me>/.local/share/virtualenvs/pipenvtesting-TqUem2-j
+Installing dependencies from Pipfile.lock (3cbc06)...
+  🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 0/0 — 00:00:00
+To activate this project's virtualenv, run pipenv shell.
+Alternatively, run a command inside the virtualenv with pipenv run.
+```
+
+This is
 done by setting the python version for the project with asdf: `asdf
 local python 3.9.5`, and creating the [`pipenv`][pipenv] virtual
 environment: `pipenv --python $(asdf which python)`. In addition, it
 should be common practice to specify the python version in the
 `Pipfile`:
 
-```toml
+```
 [requires]
 python_version = "3.8"
 ```
