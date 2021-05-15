@@ -25,7 +25,7 @@ I am here to hopefully simplify the process into the following steps:
 Throughout this post, I will explain my reasoning behind my suggestions,
 so that hopefully you will understand **why** I have made my choices.
 
-![The python ecosystem](/img/virtualenvs.png)
+![The python ecosystem](/img/virtualenvs.svg)
 
 *The Python ecosystem. Items in green represent suggested tools. Items
 in red represent parts of the system that should not be used.*
