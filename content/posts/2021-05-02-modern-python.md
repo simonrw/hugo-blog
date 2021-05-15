@@ -46,11 +46,11 @@ The main reason I suggest using one of these two package managers is
 then your install isn't tied to the system Python.
 
 On macOS it's tempting to use [`homebrew`][homebrew] to install your
-Python version. This is not a good idea. [`homebrew`][homebrew]
+Python version. This is not a good idea.  [`homebrew`][homebrew]
 regularly updates the `python` formula to include the latest version. If
 for example, a CLI package is installed - such as the AWS CLI, it's tied
-to a single global Python version. When [`homebrew`][homebrew] updates
-the Python formula, the AWS CLI will stop working.
+to a single global Python minor version. When [`homebrew`][homebrew]
+updates the Python formula, the AWS CLI will stop working.
 
 ## Install a Python dependency manager
 
@@ -75,17 +75,14 @@ This all therefore means that we must:
 * package dependencies must be strictly resolved, so that projects can
   include the correct versions.
 
-This is implemented through "virtual environments", which configure a
-python interpreter to look in a specific location for packages. This
+This is implemented through "virtual environments"[^2], which configure
+a python interpreter to look in a specific location for packages. This
 means that a virtual environment for project A can include different
 packages than the virtual environment for project B.
 
 ### Global isolation
 
 **Suggestion**: Use [`pipx`][pipx]
-
-This isolation is where my first suggestion in this section comes in:
-[`pipx`][pipx].
 
 [`pipx`][pipx] is a tool which installs a single binary - for example
 the AWS CLI - into its own virtual environment. This isolates **its**
@@ -271,7 +268,7 @@ Alternatively, run a command inside the virtualenv with pipenv run.
 
 This is
 done by setting the python version for the project with asdf: `asdf
-local python 3.9.5`, and creating the [`pipenv`][pipenv] virtual
+method local python 3.9.5`, and creating the [`pipenv`][pipenv] virtual
 environment: `pipenv --python $(asdf which python)`. In addition, it
 should be common practice to specify the python version in the
 `Pipfile`:
@@ -294,6 +291,7 @@ library. Therefore, locking the packages with a later version of Python
 does not include this package in the list of dependencies.
 
 [^1]: For example building a docker container, or lambda.
+[^2]: Until the [`__pypackages__` concept](https://www.python.org/dev/peps/pep-0582/) is more widely supported.
 
 [asdf]: https://github.com/asdf-vm/asdf
 [pyenv]: https://github.com/pyenv/pyenv
