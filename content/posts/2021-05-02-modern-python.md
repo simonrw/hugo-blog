@@ -4,7 +4,6 @@ date: 2021-05-02T12:00:00+01:00
 tags:
 - python
 summary: My recommendations for Python projects
-draft: true
 ---
 
 Python dependency management is difficult.
@@ -17,8 +16,8 @@ developed, from reading out of date blog posts or stack overflow advice.
 I am here to hopefully simplify the process into the following steps:
 
 1. [Install Python](#install-python): [`asdf`][asdf]
-2. [Install a Python dependency manager](#install-a-python-dependency-manager): [`poetry`][poetry] +
-   [`pipx`][pipx]
+2. [Managing global packages](#managing-global-packages): [`pipx`][pipx]
+2. [Install a Python dependency manager](#install-a-python-dependency-manager): [`poetry`][poetry]
 3. [Best practices](#best-practices)
 4. [My workflow](#my-workflow)
 
@@ -52,6 +51,20 @@ for example, a CLI package is installed - such as the AWS CLI, it's tied
 to a single global Python minor version. When [`homebrew`][homebrew]
 updates the Python formula, the AWS CLI will stop working.
 
+## Managing global packages
+
+**Suggestion**: Use [`pipx`][pipx]
+
+[`pipx`][pipx] is a tool which installs a single binary - for example
+the AWS CLI - into its own virtual environment. This isolates **its**
+packages from everything else. When combined with [`asdf`][asdf], this
+means that Python version upgrades are up to you, and therefore will not
+break your packages at unpredictable times.
+
+This isolation is **especially** true for Python dependency managers.
+They should be installed in a unique environment so that they don't pick
+up packages from outside by accident.
+
 ## Install a Python dependency manager
 
 **Suggestion**: Use [`poetry`][poetry] installed via [`pipx`][pipx]
@@ -79,20 +92,6 @@ This is implemented through "virtual environments"[^2], which configure
 a python interpreter to look in a specific location for packages. This
 means that a virtual environment for project A can include different
 packages than the virtual environment for project B.
-
-### Global isolation
-
-**Suggestion**: Use [`pipx`][pipx]
-
-[`pipx`][pipx] is a tool which installs a single binary - for example
-the AWS CLI - into its own virtual environment. This isolates **its**
-packages from everything else. When combined with [`asdf`][asdf], this
-means that Python version upgrades are up to you, and therefore will not
-break your packages at unpredictable times.
-
-This isolation is **especially** true for Python dependency managers.
-They should be installed in a unique environment so that they don't pick
-up packages from outside by accident.
 
 ### Project isolation
 
@@ -180,6 +179,9 @@ set](https://python-poetry.org/docs/libraries/)
 
 ## Best practices
 
+* Set the `PIP_REQUIRE_VIRTUALENV` environment variable to `true`. This
+  will prevent `pip` from installing into the global package list,
+  without a virtual environment.
 * **Never** install packages using `pip` into the global environment of
   a Python installation. [`pipx`][pipx] enforces the use of virtual
   environments for CLIs, and [`poetry`][poetry] enforces the use of
@@ -266,17 +268,20 @@ To activate this project's virtualenv, run pipenv shell.
 Alternatively, run a command inside the virtualenv with pipenv run.
 ```
 
-This is
-done by setting the python version for the project with asdf: `asdf
-method local python 3.9.5`, and creating the [`pipenv`][pipenv] virtual
-environment: `pipenv --python $(asdf which python)`. In addition, it
-should be common practice to specify the python version in the
-`Pipfile`:
+This is done by setting the python version for the project with asdf:
+`asdf method local python 3.9.5`, and creating the [`pipenv`][pipenv]
+virtual environment: `pipenv --python $(asdf which python)`. In
+addition, it should be common practice to specify the python version in
+the `Pipfile`:
 
 ```
 [requires]
 python_version = "3.8"
 ```
+
+If the version of python is not found with this configuration,
+[`pipenv`][pipenv] will prompt you to install it, via either
+[`asdf`][asdf] or `pyenv`.
 
 Another common problem with [`pipenv`][pipenv] is locking packages with
 Python >= 3.8, and trying to install the project with Python < 3.8. This
