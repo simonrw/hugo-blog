@@ -12,7 +12,13 @@ couldn't find a handy example to use, and so had to investigate myself.
 ## Example server
 
 We will set up an example server using [FastAPI](https://fastapi.tiangolo.com/) in Python. This server will show a basic HTML template containing a
-single text input for new messages, and 
+single text input for new messages:
+
+<video width="240" controls>
+ <source src="/video/htmx-example.mp4" type="video/mp4">
+</video>
+
+The server itself looks like this:
 
 ```python
 import time
