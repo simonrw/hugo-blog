@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+
+import argparse
+from datetime import datetime
+
+
+TEMPLATE = """\
+---
+title: TITLE
+date: DATE
+tags:
+summary:
+---
+"""
+
+
+def slugify(title: str) -> str:
+    today = datetime.now()
+    slug_without_date = title.lower().replace(" ", "-")
+
+    return f"{today.strftime('%Y-%m-%d')}-{slug_without_date}"
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("title")
+args = parser.parse_args()
+
+
+slug = slugify(args.title)
+path = f"content/posts/{slug}.md"
+
+content = TEMPLATE.replace("TITLE", args.title).replace(
+    "DATE", datetime.now().strftime("%Y-%m-%d")
+)
+with open(path, "w") as outfile:
+    outfile.write(content)
