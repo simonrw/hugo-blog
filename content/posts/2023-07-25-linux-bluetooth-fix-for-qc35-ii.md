@@ -22,3 +22,5 @@ I bought a new bluetooth dongle. Not a very exciting change I agree, and also do
 * The new dongle is plugged into a front-mounted USB port, which I know is USB3. The back port may have been USB2 (to be checked).
 
 This post is a living document in the sense of: I cannot check which of the above is the right answer right now, but will do in the future. Watch this space.
+
+**Update 2023-07-29**: the previous dongle was definitely Bluetooth 4 so it's likely that was the cause of the issue. Perhaps it was Bluetooth 4.0 which is not supported. It certainly has less bandwidth than Bluetooth 5.
