@@ -85,20 +85,20 @@ schema {
 }
 
 type RootSchemaQuery {
-  foo: Bar!
+  foo: Bar!                     # <- resolve_starting_vertices
 }
 
 type Bar {
-  quux: String!
-  baz: Iface,
+  quux: String!                 # <- resolve_property
+  baz: Iface,                   # <- resolve_neighbors
 }
 
 type Baz implements Iface {
-  value: String!
+  value: String!                # <- resolve_property
 }
 
 interface Iface {
-  value: String!
+  value: String!                # <- resolve_property
 }
 ```
 
