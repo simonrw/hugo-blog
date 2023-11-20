@@ -2,7 +2,7 @@ name: Documentation linter
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
     paths:
       - '**.md'
 
@@ -23,5 +23,5 @@ jobs:
           folder-path: 'content/posts/'
           check-modified-files-only: 'yes'
           file-extension: '.md'
-          base-branch: 'main'
+          base-branch: 'master'
 
