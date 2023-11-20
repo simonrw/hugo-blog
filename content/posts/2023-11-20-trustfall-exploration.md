@@ -211,6 +211,12 @@ fn resolve_neighbors<V: trustfall::provider::AsVertex<Self::Vertex> + 'a>(
 }
 ```
 
+## Final note
+
+Though I haven't tried many of the directives (e.g. `@fold`), I _have_ played with one: `@output`.
+This property is **required** to actually output any data.
+Perhaps not the most intuitive behaviour, but it does make the output cleaner.
+
 ## Things I have not yet looked into
 
 * `Adapter` vs `BasicAdapter`
