@@ -9,6 +9,9 @@ defaultMarkdownHandler = "goldmark"
 [markup.goldmark.renderer]
 unsafe = true
 
+[build.environment]
+HUGO_VERSION = "0.109.0"
+
 [menu]
 
   [[menu.main]]
