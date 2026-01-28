@@ -5,6 +5,7 @@ tags:
 - cdk
 - eks
 - aws
+summary: My struggles deploying EKS clusters with CDK
 ---
 
 In the past I have found that deploying an EKS cluster with the CDK has ended me up in a state where I cannot access the cluster using `kubectl`. I did some research and found I needed to specify that the `mastersRole` of the cluster can be assumed by my principal.
