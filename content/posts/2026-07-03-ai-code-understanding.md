@@ -28,10 +28,8 @@ We have lost the detailed understanding phase where *someone* intimately knows w
 
 There is now a **lack of knowledge of what the feature does** and how well the tests cover that functionality. I have experienced this myself. We now rely on up front definition and prompting to capture the entire feature, plus perhaps some minor manual testing to confirm that the change is a good one.
 
-> [!NOTIFY]
-> System notification: Your password will expire in 30 days.
-
-Ask yourself: do you really **know** that you covered the edge cases with your last vibecoded 10k changed LOC PR?
+> [!QUESTION]
+> Ask yourself: do you really **know** that you covered the edge cases with your last vibecoded 10k changed LOC PR?
 
 Maybe this is a skill issue on my part. I can certainly be more mindful of what the LLM writes in the first place. But I have always been a “doing” learner. I have written out thousands of quick start guides or tutorials instead of copying and pasting so that it sticks in my brain. I feel I am losing that with LLMs. 
 
@@ -44,5 +42,9 @@ I also think LLMs that can **act** (ie agents) have their place. And they unlock
 - correctness (the agent can run tests),
 - understanding (I am reviewing the changes as they happen, not at the end with a big pr), and
 - velocity (the agent can type quicker and better than I can).
+
+To that end, I wrote [ask-agent](https://github.com/simonrw/ask-agent) a neovim plugin to ask Codex a question with the selected text as context.
+
+---
 
 Try using agents for tight well scoped work with clear outcomes, and review the outputs at each stage. Ensure you remain familiar with what you are building at a feature level, and I think you will create more maintainable applications in the long run.
