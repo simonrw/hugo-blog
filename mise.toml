@@ -1,5 +1,5 @@
 [tools]
-hugo = "latest"
+hugo = "0.163.3"
 
 [env]
 REVIEW_BASE = "master"
