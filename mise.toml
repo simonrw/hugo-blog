@@ -1,2 +1,5 @@
 [tools]
-hugo = "0.109.0"
+hugo = "latest"
+
+[env]
+REVIEW_BASE = "master"

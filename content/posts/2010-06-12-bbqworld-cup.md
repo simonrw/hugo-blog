@@ -1,6 +1,6 @@
 ---
 Title: BBQ/World cup
-Date: 2010-06-12 23:10
+Date: 2010-06-12 23:10:00
 Category: life
 layout: post
 comments: true
