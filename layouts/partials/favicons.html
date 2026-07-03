@@ -1,0 +1,6 @@
+{{ if fileExists "static/favicon.ico" }}
+<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
+{{ end }}
+{{ if fileExists "static/favicon.png" }}
+<link rel="apple-touch-icon-precomposed" href="{{ "favicon.png" | relURL }}">
+{{ end }}

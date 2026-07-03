@@ -1,7 +1,7 @@
 baseURL = "https://blog.simonrw.com"
 locale = "en-us"
 title = "Circularspace"
-theme = "anubis"
+theme = ["hugo-admonitions", "anubis"]
 
 [markup]
 defaultMarkdownHandler = "goldmark"
