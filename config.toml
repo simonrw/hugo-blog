@@ -3,6 +3,9 @@ locale = "en-us"
 title = "Circularspace"
 theme = ["hugo-admonitions", "anubis"]
 
+[params]
+style = "auto"
+
 [markup]
 defaultMarkdownHandler = "goldmark"
 
