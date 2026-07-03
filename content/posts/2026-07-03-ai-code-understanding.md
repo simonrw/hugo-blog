@@ -39,7 +39,7 @@ I don't want to give up on pace either. The first time I prompted an agent to wo
 
 One aspect I think LLMs excel at is talking through problems and open ended research. I've learnt a lot from asking vague questions into ChatGPT, treating it as a “better google”. 
 
-I also think LLMs that can **act** (ie agents) ****have their place. And they unlock a huge amount ****of power, e.g. performing web searches, searching code bases, running tests etc.  It is making me think that the way forward is an agent for a tiny well scoped change, and iterate slowly. Letting the agent do the heavy lifting as we go along. I gain the benefit of 
+I also think LLMs that can **act** (ie agents) have their place. And they unlock a huge amount of power, e.g. performing web searches, searching code bases, running tests etc.  It is making me think that the way forward is an agent for a tiny well scoped change, and iterate slowly. Letting the agent do the heavy lifting as we go along. I gain the benefit of 
 
 - correctness (the agent can run tests),
 - understanding (I am reviewing the changes as they happen, not at the end with a big pr), and
