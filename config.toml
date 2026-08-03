@@ -6,6 +6,11 @@ theme = ["hugo-admonitions", "anubis"]
 [params]
 style = "auto"
 
+[params.posthog]
+enable = true
+apiKey = "phc_t3vSNbJgmUhaK8VXRdigNF2LF6YVoo2f6wK4bxCxMcBE"
+apiHost = "https://eu.i.posthog.com"
+
 [markup]
 defaultMarkdownHandler = "goldmark"
 
