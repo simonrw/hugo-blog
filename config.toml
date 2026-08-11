@@ -5,6 +5,8 @@ theme = ["hugo-admonitions", "anubis"]
 
 [params]
 style = "auto"
+description = "A blog about software, technology, and other interests."
+images = ["/img/social-preview.png"]
 
 [params.posthog]
 enable = true
